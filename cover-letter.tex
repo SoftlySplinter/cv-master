@@ -21,6 +21,7 @@
 \documentclass[10pt,stdletter,dateno,sigleft]{newlfm} % Extra options: 'sigleft' for a left-aligned signature, 'stdletternofrom' to remove the from address, 'letterpaper' for US letter paper - consult the newlfm class manual for more options
 
 \usepackage{charter} % Use the Charter font for the document text
+\usepackage{url}
 
 %\newsavebox{\Luiuc}\sbox{\Luiuc}{\parbox[b]{1.75in}{\vspace{0.5in}
 %\includegraphics[width=1.2\linewidth]{logo.png}}} % Company/institution logo at the top left of the page
@@ -89,41 +90,62 @@ penultimate year of the Software Engineering MEng course, I am a capable
 developer with experience in developing in-house tools and contributing to
 open source projects.
 
+% You are comfortable with a wide range of technologies and languages (our core languages are C++, Scala, Java, PHP, and server-side JavaScript; you may also have Python or Ruby)
+Examples of my work are available on GitHub 
+(\url{https://github.com/SoftlySplinter/}). 
+%	Python experience; both functional and OO elements, OpenCV, Flask, PyPi, unittest2, etc.
+%	Java experience; OSGi, Eclipse, Android, some EE
+%	Limited C experience, less so with C++; standard GCC libraries
+%	Investigated Scala, Ruby, Node.js
+
+% You have a solid Computer Science or Software Engineering background 
+%	Degree - achieving high marks
+I am already achieving high marks from the coursework submitted for masters
+level modules, as well as already having achieved high marks from my final
+project, which also led to the aforementioned paper.
+
+This project focused on dating the work of the Welsh artist Kyffin Williams 
+using catalogue photographs with known dates. This involved using image 
+processing techniques to analyse this pictures and classify a new example based
+on the existing work.
+
 % You are comfortable creating and maintaining in-house test tools, platforms and environments from scratch
 % 	CICS L3 Service Tooling (not testing, but synonymous)
 In my role at IBM I was responsible for creating and maintaining in-house tools and 
-platforms which aided the jobs of both members CICS L3 Service team and members
-of CICS management through the automated gathering of statistics and the 
+platforms, which aided the jobs of both members of the CICS L3 Service team and members
+of CICS management, through the automated gathering of statistics and the 
 improvement or automation of regularly performed tasks.
 
 % You are comfortable working on full-stack solutions, including the creating of virtual machines and the provisioning of machines
 %	VPS Management
 During this time at IBM I worked closely with a CentOS Server running DB2 and a WebSphere 
-Application Server which ran some of the in-house tools. I have also managed a
+Application Server, which ran some of the in-house tools. I have also managed a
 personal VPS which runs Nginx to provide web-based content and have previous
 hosted Flask-based Python applications using the WSGI module.
 
 %	Played with Vagrant during the code test
 Although I have not had a huge amount of experience provisioning and creating 
 virtual machines, I was able to quickly learn the basics of Vagrant during the
-programming exercise I completed in November and have continued to use and 
+programming exercise I completed in November, and have continued to use and 
 explore the features Vagrant provides. %TODO blag this less.
 
 % You have a passion for automating complex activities, and are drawn to the challenge of ensuring that nothing has to be done manually
 %	CICS L3 Automation
 A main role in my job at IBM was to automate a lot of the end-to-end process 
 used to deliver fix packs of CICS Eclipse-based products. This system pulled
-information from servers used to develop the fix packs and would package it up
-in a way which the update servers would recognise and then deliver it to these
-systems.
-
+information from servers used to develop the fix packs, package it in a way 
+which the update servers would recognise and then deliver the pack.
 This system also allowed these elements to be scripted in a simple language so
 the developers could further automate this process.
+
+This system involved digging into a lot of the external APIs to figure how
+certain parameters were used and how they would affect the delivery of the fix
+packs.
 
 %	Shell scripting
 %	Travis integration
 I am also versed at using shell scripts to automate some of the mundane tasks
-I perform day-to-day such as automatically pulling university notes from an
+I perform day-to-day, such as automatically pulling university notes from an
 online editor and then pushing these notes into a git repository. I'm also
 used to compiling code through the use of build tools such as GNU make or 
 Python setup tools. I have also set up Travis integration with some projects to
@@ -133,13 +155,17 @@ provide automated testing against different runtimes.
 % You enjoy getting under the skin of something, and figuring out the ramifications of complex interactions
 %	Dissertation
 %	Uni modules
+In my most recent job as Advisor at Aberystwyth University, it is one of my 
+responsibilities to help students in lower years with their programming 
+assignments. This is often a matter of debugging through their code and 
+figuring out how it fits together, to then work out where their error is
+occurring and how it might be fixed without large changes being made.
 
 % You look to prove what is actually happening rather than work off assumptions
 %	Tend to run to ensure behaviour is expected. Tending to expand this to automated testing through Travis for some GitHub projects (c-armok, etc.)
 
 % You can take ownership of a tool and lead its development and direction
 %	IBM examples
-%	ACC website
 
 % You can react quickly and confidently to urgent situations
 %	Teaching
@@ -151,26 +177,34 @@ provide automated testing against different runtimes.
 % You are comfortable working within lightweight processes where the code under development is the main reference point for testing requirements
 %	???
 
-% You have a solid Computer Science or Software Engineering background 
-%	Degree - achieving high marks
-
-% You are comfortable with a wide range of technologies and languages (our core languages are C++, Scala, Java, PHP, and server-side JavaScript; you may also have Python or Ruby)
-%	Python experience; both functional and OO elements, OpenCV, Flask, PyPi, unittest2, etc.
-%	Java experience; OSGi, Eclipse, Android, some EE
-%	Limited C experience, less so with C++; standard GCC libraries
-%	Investigated Scala, Ruby, Node.js
-
 % You are comfortable working on Linux on the server, and either Linux or OS X on the desktop
+I am a competent Linux user, both for desktop and server use. I also talk at 
+and help organise events for the West Wales Linux Users Group.
 %	Currently run Linux on all machines, preferred OS.
 %	VPS
 %	Other server management
 
 % Ability to collaborate with and enjoy a small, intense team of engineers and business people in a world-leading company
 %	Worked in many teams, mostly small groups.
+Developed a game based on the travelling salesman problem which would introduce
+school children to the concepts of mathematics and artificial agents for the
+Blue Fusion event held at IBM Hursley. During this process I often had to 
+control the quality of the code being committed and fix problems others 
+encountered.
+
 %	Open Source Experience
+I have worked as part of an online group of artists improving the art for the
+open source game \textit{Battle for Wesnoth}. I have also worked as part of a small 
+group contributing to the open source project \textit{pytentd}.
 
 % Strong verbal and written communication skills
 %	Presentations and teaching
+I have presented the subject of my dissertation; dating an artists work from 
+catalogue photographs; at both the ISPA Conference and at the BSc Show and 
+Tell.
+
+I have also led a team of IBMers in organising and running a Java Masterclass
+at Swanmore School of Technology, often presenting the session content myself.
 
 % Scrupulous attention to detail and addicted to quality
 %	???
