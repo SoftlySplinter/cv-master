@@ -1,0 +1,238 @@
+
+% LaTeX Template
+% Version 1.0 (1/6/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Matthew J. Miller
+% http://www.matthewjmiller.net/howtos/customized-cover-letter-scripts/
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt,stdletter,dateno,sigleft]{newlfm} % Extra options: 'sigleft' for a left-aligned signature, 'stdletternofrom' to remove the from address, 'letterpaper' for US letter paper - consult the newlfm class manual for more options
+
+\usepackage{charter} % Use the Charter font for the document text
+\usepackage{url}
+
+%\newsavebox{\Luiuc}\sbox{\Luiuc}{\parbox[b]{1.75in}{\vspace{0.5in}
+%\includegraphics[width=1.2\linewidth]{logo.png}}} % Company/institution logo at the top left of the page
+%\makeletterhead{Uiuc}{\Lheader{\usebox{\Luiuc}}}
+
+\newlfmP{sigsize=50pt} % Slightly decrease the height of the signature field
+\newlfmP{addrfromphone} % Print a phone number under the sender's address
+\newlfmP{addrfromemail} % Print an email address under the sender's address
+\PhrPhone{Phone} % Customize the "Telephone" text
+\PhrEmail{Email} % Customize the "E-mail" text
+
+%\lthUiuc % Print the company/institution logo
+
+%----------------------------------------------------------------------------------------
+%	YOUR NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\namefrom{Alexander D Brown} % Name
+
+\addrfrom{
+\today\\[12pt] % Date
+Alexander D Brown \\
+Little Barmoor, \\ % Address
+Sunset Lane, \\
+West Chiltington, \\
+West Sussex, \\
+RH20 2NY
+}
+
+\phonefrom{07575579840} % Phone number
+\emailfrom{alex@alexanderdbrown.com} % Email address
+
+%----------------------------------------------------------------------------------------
+%	ADDRESSEE AND GREETING/CLOSING
+%----------------------------------------------------------------------------------------
+
+\greetto{Dear Stuart,} % Greeting text
+\closeline{Yours sincerely,} % Closing text
+
+\nameto{Stuart Herbert} % Addressee of the letter above the to address
+
+\addrto{
+stuart.herbert@datasift.com}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+\begin{newlfm}
+
+%----------------------------------------------------------------------------------------
+%	LETTER CONTENT
+%----------------------------------------------------------------------------------------
+
+
+%PARAGRAPH ONE: State the reason for the letter, name the position or type of work you are applying for and identify the source from which you learned of the opening (i.e. career development centre, newspaper, employment service, personal contact).
+
+I am applying for the role of Internal Job Engineer as described through our recent conversations.
+
+%PARAGRAPH TWO: Indicate why you are interested in the position, the company, its products, services - above all, stress what you can do for the employer. If you are a recent graduate, explain how your academic background makes you a qualified candidate for the position. If you have practical work experience, point out specific achievements or unique qualifications. Try not to repeat the same information the reader will find in the resume. Refer the reader to the enclosed resume or application which summarizes your qualifications, training, and experiences. The purpose of this section is to strengthen your resume by providing details which bring your experiences to life. 
+
+% TODO quick whistle stop tour
+Having published and presented a paper at an IEEE conference and earning the
+Portaltech Reply Bursary in Computer Science for best performance in the
+penultimate year of the Software Engineering MEng course, I am a capable
+developer with experience in developing in-house tools and contributing to
+open source projects.
+
+I enjoy promoting open source software by helping to organise and run events
+for the West Wales Linux Users Group, set up and moderate talks at FOSDEM and
+submit bug reports, produce art for and contribute to several open source 
+projects.
+
+% You are comfortable with a wide range of technologies and languages (our core languages are C++, Scala, Java, PHP, and server-side JavaScript; you may also have Python or Ruby)
+Examples of my work are available on GitHub 
+(\url{https://github.com/SoftlySplinter/}).
+
+I have experience using Python and have programmed using the Flask framework
+and several libraries available on the Python packaging index.
+
+I am experienced using Java and have studied the content for version 7 
+certification. I have used the OSGi framework to develop highly-modular
+applications and Eclipse plug-ins.
+
+I have developed a few small C projects, including an interpreter for an 
+esoteric programming language. I have created a simple system using Java, C and
+C++ which used POSIX file locking to handle events between three programs.
+
+I have studied the basics of Scala, Ruby with the Rails framework and Node.js,
+and have created a few simple applications such as a REST client for a Ruby on
+Rails server, simple set manipulation in Scala and interconnection between two
+Node.js socket servers.
+%	Python experience; both functional and OO elements, OpenCV, Flask, PyPi, unittest2, etc.
+%	Java experience; OSGi, Eclipse, Android, some EE
+%	Limited C experience, less so with C++; standard GCC libraries
+%	Investigated Scala, Ruby, Node.js
+
+% You have a solid Computer Science or Software Engineering background 
+%	Degree - achieving high marks
+I am already achieving consistently high marks from the coursework submitted 
+for masters level modules, as well as having achieved high marks in my final
+project, which led to the aforementioned paper.
+
+The project focused on dating the work of the Welsh artist Kyffin Williams 
+using catalogue photographs with known dates. This involved using image 
+processing techniques to analyse pictures and classify a new example based
+on the existing work.
+
+I presented this at both the 8th International Symposium on Signal and Image Processing Analysis conference and at the BSc Show and Tell.
+
+In my most recent job as Advisor at Aberystwyth University, one of my 
+responsibilities is to help students in lower years with their programming 
+assignments. This is often a matter of debugging their code and 
+figuring out how it fits together, to then work out where their error is
+occurring and how it might be fixed without large changes being made.
+
+% You are comfortable creating and maintaining in-house test tools, platforms and environments from scratch
+% 	CICS L3 Service Tooling (not testing, but synonymous)
+In my role at IBM I was responsible for creating and maintaining in-house tools and 
+platforms, which aided the jobs of both members of the CICS L3 Service team and members
+of CICS management, through the automated gathering of statistics and the 
+improvement or automation of regularly performed tasks.
+
+% You are comfortable working on full-stack solutions, including the creating of virtual machines and the provisioning of machines
+%	VPS Management
+During this time at IBM I worked closely with a CentOS Server running DB2 and a WebSphere 
+Application Server, which ran some of the in-house tools. I have also managed a
+personal VPS which runs Nginx to provide web-based content. I have previously
+hosted Flask-based Python applications using the WSGI module.
+
+% You have a passion for automating complex activities, and are drawn to the challenge of ensuring that nothing has to be done manually
+%	CICS L3 Automation
+A main role in my job at IBM was to automate a lot of the end-to-end process 
+used to deliver fix packs of CICS Eclipse-based products. I authored a system which used
+information from servers to package fix packs in a way which was used to deliver them to update servers.
+This system allowed these elements to be scripted in a simple language so
+the developers could further automate this process.
+
+How certain parameters were used and how they would affect the delivery of the fix
+packs involved digging into a lot of the external APIs and understanding 
+how they would work together with one another.
+
+I have led a team of IBMers in organising and running a Java Masterclass
+at Swanmore School of Technology, often presenting the session content myself.
+I ran other Java teaching sessions for IBMers with different programming
+backgrounds.
+
+I organised and ran the inductions for the new IBM industrial year students as
+part of a team of three. This involved timetabling the inductions, contacting
+speakers and setting up all laptops for these students, ensuring they had the
+correct software for their job role. The lab manager for IBM Hursley 
+thanked us for the quality of the inductions.
+% You enjoy getting under the skin of something, and figuring out the ramifications of complex interactions
+%	Dissertation
+%	Uni modules
+
+%	Shell scripting
+%	Travis integration
+%I commonly use shell scripts to automate some day-to-day tasks, such as 
+%pulling university notes from an online editor and then pushing these notes into a git repository. I'm
+%used to compiling code through the use of build tools such as GNU make or 
+%Python setup tools. 
+
+% You look to prove what is actually happening rather than work off assumptions
+%	Tend to run to ensure behaviour is expected. Tending to expand this to automated testing through Travis for some GitHub projects (c-armok, etc.)
+
+% You can take ownership of a tool and lead its development and direction
+%	IBM examples
+
+% You can react quickly and confidently to urgent situations
+%	Teaching
+%	Kayaking
+
+% You are comfortable creating and maintaining tools for a service-oriented architecture
+
+% You are comfortable working within lightweight processes where the code under development is the main reference point for testing requirements
+
+% You are comfortable working on Linux on the server, and either Linux or OS X on the desktop
+%	Currently run Linux on all machines, preferred OS.
+
+% Ability to collaborate with and enjoy a small, intense team of engineers and business people in a world-leading company
+%	Worked in many teams, mostly small groups.
+Developed a game based on the travelling salesman problem which would introduce
+school children to the concepts of mathematics and artificial agents for the
+Blue Fusion event held at IBM Hursley. During this process I often had to 
+control the quality of the code being committed and fix problems others 
+encountered.
+This game was chosen to be used as the grand finale for each day of the event,
+so it was constantly checked by the organisers to ensure it would work.
+
+%	Open Source Experience
+I have worked as part of an online group of artists improving the art for the
+open source game \textit{Battle for Wesnoth}. I have also worked as part of a small 
+group contributing to the open source project \textit{pytentd}. For \textit{pytentd} I
+set up and maintained Travis integration with the github repository to test against
+different environments.
+
+% Strong verbal and written communication skills
+%	Presentations and teaching
+
+% Scrupulous attention to detail and addicted to quality
+%	???
+
+% Ready to take responsibility and go the extra yard to hit a deadline
+%	Blue Fusion
+
+ 
+%PARAGRAPH THREE: Request a personal interview and indicate your flexibility as to the time and place. Repeat your phone number in the letter and offer assistance to help in a speedy response. For example, state that you will be in the city where the company is located on a certain date and would like to set up an interview. Alternatively, state that you will call on a certain date to set up an interview. End the letter by thanking the employer for taking time to consider your credentials. 
+
+Thank you for taking the time to consider my application.
+
+%----------------------------------------------------------------------------------------
+
+\end{newlfm}
+\end{document}
